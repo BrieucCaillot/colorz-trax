@@ -6,6 +6,9 @@
   }
 
   &__elem {
+    @media screen and (max-width: 500px) {
+      width: 310px !important;
+    }
     @media screen and (max-width: 481px) {
       width: 220px !important;
     }

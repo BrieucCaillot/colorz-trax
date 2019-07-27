@@ -74,22 +74,21 @@
             slidesOffsetBefore: 210,
             spaceBetween: 40,
           },
-          // when window width is <= 768
+          500: {
+            slidesOffsetBefore: 210,
+            spaceBetween: 40,
+          },
           768: {
             slidesOffsetBefore: 35,
             slidesPerView: 2,
           },
-          // when window width is <= 1024
           1024: {
             slidesOffsetBefore: 35,
             slidesPerView: 3,
-            // slidesOffsetBefore: -725,
           },
-          // when window width is <= 1408
           1480: {
             slidesOffsetBefore: -560,
           },
-          // when window width is <= 1920
           1920: {
             slidesOffsetBefore: -75,
           },

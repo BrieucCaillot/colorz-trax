@@ -1,6 +1,7 @@
 html, body {
   overflow-x: hidden;
 }
+
 body, * {
   transition: 0.2s;
 }
@@ -159,12 +160,18 @@ section {
     }
   }
 
+  &__right {
+    @media screen and (max-width: $tablet) {
+      margin-top: 10px;
+    }
+  }
+
   .logo {
     display: block;
     margin: 0 auto;
     width: initial;
     @media screen and (min-width: $tablet) {
-      margin: 0 0 0 auto ;
+      margin: 0 0 0 auto;
       width: 180px;
     }
   }
