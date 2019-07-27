@@ -1,0 +1,8 @@
+.background {
+  &__is-primary {
+    background-color: $primary;
+  }
+  &__is-secondary {
+    background-color: map-get($colors, secondary);
+  }
+}

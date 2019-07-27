@@ -1,0 +1,229 @@
+.section__third {
+  padding: 20px 35px 0 35px;
+  @media screen and (min-width: $desktop) {
+    padding: 100px 140px;
+  }
+  @media screen and (min-width: $widescreen) {
+    padding: 100px 160px;
+  }
+  @media screen and (min-width: $fullhd) {
+    padding: 100px 300px;
+  }
+
+  &__elem {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    @media screen and (min-width: $desktop) {
+      flex-direction: row;
+    }
+
+    &:last-child {
+      @media screen and (min-width: $tablet) {
+        border-bottom: none;
+      }
+    }
+
+    &:nth-child(odd) {
+      .section__third__elem__number {
+        @media screen and (min-width: $tablet) {
+          display: block;
+        }
+
+        &.elem-big {
+          @media screen and (max-width: $desktop) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &__number {
+      display: none;
+      position: absolute;
+      font-size: 120px;
+      top: -15px;
+      left: -22px;
+      color: map-get($colors, tertiary);
+      z-index: 5;
+      @media screen and (min-width: $desktop) {
+        font-size: 110px;
+        top: 12px;
+        left: -100px;
+      }
+      @media screen and (min-width: $widescreen) {
+        font-size: 160px;
+        top: 0;
+        left: -140px;
+      }
+      @media screen and (min-width: $fullhd) {
+        font-size: 250px;
+        top: -22px;
+        left: -230px;
+      }
+    }
+
+    &__image {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+      min-height: 240px;
+      @media screen and (min-width: $tablet) {
+        min-width: 360px;
+      }
+      @media screen and (min-width: $desktop) {
+        margin-right: 40px;
+      }
+
+      &:hover {
+        a {
+          transform: scale(1.2);
+        }
+      }
+
+      a {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        @media screen and (max-width: $desktop) {
+          min-height: 240px;
+        }
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &__title {
+        font-size: 28px;
+        color: map-get($colors, black);
+        margin-top: 15px;
+        @media screen and (min-width: $desktop) {
+          margin-top: 0;
+        }
+
+        &.elem-big {
+          font-size: 30px;
+          color: map-get($colors, white);
+          max-width: 100%;
+          @media screen and (min-width: 550px) {
+            font-size: 34px;
+            max-width: 69%;
+          }
+          @media screen and (min-width: $tablet) {
+            max-width: 61%;
+          }
+          @media screen and (min-width: $tablet) {
+            max-width: 55%;
+          }
+          @media screen and (min-width: $desktop) {
+            font-size: 58px;
+            max-width: 80%;
+          }
+
+          a:hover {
+            color: inherit;
+          }
+        }
+      }
+
+      &__location {
+        display: block;
+        font-family: $family-secondary-light;
+        font-size: 16px;
+        font-weight: 100;
+        padding: 5px 0 10px 0;
+      }
+
+      &__date-time {
+        font-family: $family-secondary-light;
+        font-size: 12px;
+        padding-top: 7px;
+        color: #666666;
+
+        &.elem-big {
+          color: map-get($colors, white);
+        }
+      }
+
+      &__date {
+        position: relative;
+        padding-left: 20px;
+        margin-right: 40px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 2px;
+          left: 0;
+          display: inline-block;
+          @extend .icon__calendar;
+          @extend .icon__calendar__grey;
+        }
+
+        &.elem-big {
+          margin-right: 30px;
+
+          &:before {
+            top: 3px;
+            @extend .icon__calendar__white;
+          }
+        }
+      }
+
+      &__time {
+        position: relative;
+        padding-left: 20px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 2px;
+          left: 0;
+          display: inline-block;
+          @extend .icon__time;
+          @extend .icon__time__grey;
+        }
+
+        &.elem-big {
+          &:before {
+            @extend .icon__time__white;
+          }
+        }
+      }
+
+      &.elem-big {
+        width: 100%;
+        height: 100%;
+        padding: 265px 35px 80px 35px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        @media screen and (min-width: $tablet) {
+          padding: 265px 70px 80px 70px;
+        }
+        @media screen and (min-width: $desktop) {
+          padding: 265px 70px 80px 70px;
+        }
+      }
+    }
+
+    &.elem-big {
+      margin: 0 -35px;
+      padding-bottom: 0;
+      border-bottom: none;
+      @media screen and (min-width: $desktop) {
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.d-flex {
+  display: flex;
+}
+
+.dblock {
+  display: block;
+}
+
+.jc-c {
+  justify-content: center;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.tt-u {
+  text-transform: uppercase;
+}
+
+.p-rel {
+  position: relative;
+}
+
+.p-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.of-h {
+  overflow: hidden;
+}
+
+.full-w {
+  width: 100%;
+}
+
+.full-h {
+  height: 100%;
+}
+
+.cpointer {
+  cursor: pointer;
+}
+/*////////FONTS////////*/
+.fw-i {
+  font-weight: initial;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/*////////MARGIN - PADDING////////*/
+.mauto {
+  margin: auto;
+}
+
+.mauto-w {
+  margin: 0 auto;
+}
+
+.mauto-h {
+  margin: auto 0;
+}
+
+@for $i from 0 through 10 {
+  .mg#{$i} {
+    margin: 10px*$i;
+  }
+  .pd#{$i} {
+    padding: 10px*$i;
+  }
+
+  /*////////MARGIN////////*/
+  .mb-#{$i} {
+    margin-bottom: 10px*$i;
+  }
+  .mt-#{$i} {
+    margin-top: 10px*$i;
+  }
+  .ml-#{$i} {
+    margin-left: 10px*$i;
+  }
+  .mr-#{$i} {
+    margin-right: 10px*$i;
+  }
+
+  /*////////PADDING////////*/
+  .pb-#{$i} {
+    padding-bottom: 10px*$i;
+  }
+  .pt-#{$i} {
+    padding-top: 10px*$i;
+  }
+  .pl-#{$i} {
+    padding-left: 10px*$i;
+  }
+  .pr-#{$i} {
+    padding-right: 10px*$i;
+  }
+}
