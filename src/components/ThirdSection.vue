@@ -56,8 +56,39 @@
 </template>
 
 <script>
+
+  import ScrollReveal from 'scrollreveal';
+
   export default {
     name: "ThirdSection",
+    mounted() {
+      let sr = ScrollReveal({
+        origin: 'left',
+        distance: '40px',
+        reset: false,
+        duration: 1200,
+        viewOffset: {
+          bottom: 100
+        }
+      })
+      sr.reveal('.section__third__elem__number', {
+        mobile: false,
+        distance: '60px',
+        delay: 500,
+        viewOffset: {
+          bottom: 200
+        }
+      }),
+      sr.reveal('.section__third__elem__content__title', {
+        delay: 700,
+      }),
+      sr.reveal('.section__third__elem__content__location', {
+        delay: 900,
+      }),
+      sr.reveal('.section__third__elem__content__date, .section__third__elem__content__time', {
+        delay: 1200,
+      })
+    },
     computed: {
       event_list() {
         return [
@@ -106,13 +137,6 @@
       },
     },
     methods: {
-      elem_is_big(index) {
-        switch (this.event_number(index)) {
-          case 25:
-            return true
-            break;
-        }
-      },
       event_number(index) {
         switch (index) {
           case 0:

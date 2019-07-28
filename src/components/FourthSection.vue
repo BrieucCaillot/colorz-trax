@@ -19,7 +19,28 @@
 </template>
 
 <script>
+
+  import ScrollReveal from 'scrollreveal';
+
   export default {
-    name: "FourthSection"
+    name: "FourthSection",
+    mounted() {
+
+      let sr = ScrollReveal({
+        interval: 600,
+        viewOffset: {
+          bottom: 250
+        }
+      })
+      sr.reveal('.section__fourth__image', {
+        origin: 'left',
+        scale: 0.85
+      });
+      sr.reveal('.section__fourth__content__number', {
+      })
+      sr.reveal('.section__fourth__content__subtitle', {
+        origin: 'right',
+      })
+    },
   }
 </script>

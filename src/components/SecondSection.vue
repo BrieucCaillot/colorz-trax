@@ -48,9 +48,7 @@
     mounted() {
       let mySwiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
-
         loop: true,
-        parallax: true,
         keyboard: true,
         freeMode: true,
         grabCursor: true,
