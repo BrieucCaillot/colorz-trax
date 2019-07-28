@@ -1,58 +1,58 @@
 <template>
-  <section class="section__third">
-    <div v-for="(event, index) in event_list">
+    <section class="section__third">
+        <div v-for="(event, index) in event_list">
 
-      <div v-if="event.type == 'big'" class="section__third__elem elem-big">
-        <span class="section__third__elem__number elem-big">{{ event_number(index) }}</span>
-        <div class="section__third__elem__content elem-big"
-             :style="{ 'background-image': `url(${require('@/assets/img/'+ event.image +'')})` }">
-          <div class="columns">
-            <div class="column">
-              <span class="has-text-white">{{ event.title }}</span>
-              <h2 class="section__third__elem__content__title elem-big">
-                <a href="javascript:void(0)">{{ event.name }}</a>
-              </h2>
-              <div class="section__third__elem__content__date-time elem-big">
-                <div class="level">
-                  <div class="level-left">
-                    <span class="section__third__elem__content__date elem-big">{{ event.date }}</span>
-                    <span class="section__third__elem__content__time elem-big">{{ event.time }}</span>
-                  </div>
+            <div v-if="event.type == 'big'" class="section__third__elem elem-big">
+                <span class="section__third__elem__number elem-big">{{ event_number(index) }}</span>
+                <div class="section__third__elem__content elem-big"
+                     :style="{ 'background-image': `url(${require('@/assets/img/'+ event.image +'')})` }">
+                    <div class="columns">
+                        <div class="column">
+                            <span class="has-text-white">{{ event.title }}</span>
+                            <h2 class="section__third__elem__content__title elem-big">
+                                <a href="javascript:void(0)">{{ event.name }}</a>
+                            </h2>
+                            <div class="section__third__elem__content__date-time elem-big">
+                                <div class="level">
+                                    <div class="level-left">
+                                        <span class="section__third__elem__content__date elem-big">{{ event.date }}</span>
+                                        <span class="section__third__elem__content__time elem-big">{{ event.time }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div v-else class="section__third__elem">
-        <span class="section__third__elem__number">{{ event_number(index) }}</span>
-        <div class="section__third__elem__image">
-          <a href="javascript:void(0)"
-             :style="{ 'background-image': `url(${require('@/assets/img/'+ event.image +'')})` }"></a>
-        </div>
-        <div class="section__third__elem__content">
-          <div class="columns">
-            <div class="column">
-              <h2 class="section__third__elem__content__title">
-                <a href="javascript:void(0)">{{ event.name }}</a>
-              </h2>
-              <span class="section__third__elem__content__location">{{ event.location }}</span>
-              <div class="section__third__elem__content__date-time">
-                <div class="level">
-                  <div class="level-left">
-                    <span class="section__third__elem__content__date">{{ event.date }}</span>
-                    <span class="section__third__elem__content__time">{{ event.time }}</span>
-                  </div>
+            <div v-else class="section__third__elem">
+                <span class="section__third__elem__number">{{ event_number(index) }}</span>
+                <div class="section__third__elem__image">
+                    <a href="javascript:void(0)"
+                       :style="{ 'background-image': `url(${require('@/assets/img/'+ event.image +'')})` }"></a>
                 </div>
-              </div>
+                <div class="section__third__elem__content">
+                    <div class="columns">
+                        <div class="column">
+                            <h2 class="section__third__elem__content__title">
+                                <a href="javascript:void(0)">{{ event.name }}</a>
+                            </h2>
+                            <span class="section__third__elem__content__location">{{ event.location }}</span>
+                            <div class="section__third__elem__content__date-time">
+                                <div class="level">
+                                    <div class="level-left">
+                                        <span class="section__third__elem__content__date">{{ event.date }}</span>
+                                        <span class="section__third__elem__content__time">{{ event.time }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-    </div>
-  </section>
+        </div>
+    </section>
 </template>
 
 <script>
@@ -79,15 +79,15 @@
           bottom: 200
         }
       }),
-      sr.reveal('.section__third__elem__content__title', {
-        delay: 700,
-      }),
-      sr.reveal('.section__third__elem__content__location', {
-        delay: 900,
-      }),
-      sr.reveal('.section__third__elem__content__date, .section__third__elem__content__time', {
-        delay: 1200,
-      })
+        sr.reveal('.section__third__elem__content__title', {
+          delay: 700,
+        }),
+        sr.reveal('.section__third__elem__content__location', {
+          delay: 900,
+        }),
+        sr.reveal('.section__third__elem__content__date, .section__third__elem__content__time', {
+          delay: 1200,
+        })
     },
     computed: {
       event_list() {
@@ -141,13 +141,10 @@
         switch (index) {
           case 0:
             return 18;
-            break;
           case 2:
             return 19;
-            break;
           case 4:
             return 25;
-            break;
         }
       }
     }

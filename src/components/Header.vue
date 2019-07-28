@@ -15,8 +15,8 @@
             <li class="menu__item"><a href="javascript:void(0)" class="menu__link menu__link__text">Lire</a></li>
             <li class="menu__item"><a href="javascript:void(0)" class="menu__link menu__link__text">Écouter</a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link is-hidden-touch logo" href="/">
+            <li class="menu__item is-hidden-touch">
+              <a class="menu__link logo" href="/">
                 <img src="../assets/img/logo-white.png" alt="logo-trax" width="180" height="34">
               </a>
             </li>

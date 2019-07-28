@@ -6,27 +6,7 @@
   }
 
   &__elem {
-    @media screen and (max-width: 500px) {
-      width: 310px !important;
-    }
-    @media screen and (max-width: 481px) {
-      width: 220px !important;
-    }
-    @media screen and (max-width: 376px) {
-      width: 310px !important;
-    }
-    @media screen and (max-width: 321px) {
-      width: 250px !important;
-    }
-    @media screen and (min-width: $desktop) {
-      width: 310px !important;
-    }
-    @media screen and (min-width: $widescreen) {
-      width: 370px !important;
-    }
-    @media screen and (min-width: $fullhd) {
-      width: 360px !important;
-    }
+    width: 100%;
 
     &:hover {
       .section__second__elem__top__title {

@@ -27,7 +27,7 @@
     mounted() {
 
       let sr = ScrollReveal({
-        interval: 600,
+        interval: 1000,
         viewOffset: {
           bottom: 250
         }
