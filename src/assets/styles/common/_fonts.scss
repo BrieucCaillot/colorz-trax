@@ -1,48 +1,51 @@
-$family-primary-bold: 'Proto Grotesk Web Bold';
-$family-secondary: 'Minotaur Sans';
-$family-secondary-light: 'Minotaur Sans Light';
+$family-primary-bold: "Font Primary Bold";
+$family-secondary: "Font Secondary";
+$family-secondary-light: "Font Secondary Light";
 
 @font-face {
-  font-family: 'Minotaur Sans';
-  src: url('./assets/fonts/MinotaurSans-Regular.eot');
-  src: url('./assets/fonts/MinotaurSans-Regular.eot?#iefix') format('embedded-opentype'),
-  url('./assets/fonts/MinotaurSans-Regular.woff2') format('woff2'),
-  url('./assets/fonts/MinotaurSans-Regular.woff') format('woff'),
-  url('./assets/fonts/MinotaurSans-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: "Font Secondary";
+	src: url("./assets/fonts/FontSecondary-Regular.eot");
+	src: url("./assets/fonts/FontSecondary-Regular.eot?#iefix")
+			format("embedded-opentype"),
+		url("./assets/fonts/FontSecondary-Regular.woff2") format("woff2"),
+		url("./assets/fonts/FontSecondary-Regular.woff") format("woff"),
+		url("./assets/fonts/FontSecondary-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Minotaur Sans Light';
-  src: url('./assets/fonts/MinotaurSans-Light.eot');
-  src: url('./assets/fonts/MinotaurSans-Light.eot?#iefix') format('embedded-opentype'),
-  url('./assets/fonts/MinotaurSans-Light.woff2') format('woff2'),
-  url('./assets/fonts/MinotaurSans-Light.woff') format('woff'),
-  url('./assets/fonts/MinotaurSans-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
+	font-family: "Font Secondary Light";
+	src: url("./assets/fonts/FontSecondary-Light.eot");
+	src: url("./assets/fonts/FontSecondary-Light.eot?#iefix")
+			format("embedded-opentype"),
+		url("./assets/fonts/FontSecondary-Light.woff2") format("woff2"),
+		url("./assets/fonts/FontSecondary-Light.woff") format("woff"),
+		url("./assets/fonts/FontSecondary-Light.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Proto Grotesk Web';
-  src: url('./assets/fonts/ProtoGroteskWeb-Regular.eot');
-  src: url('./assets/fonts/ProtoGroteskWeb-Regular.eot?#iefix') format('embedded-opentype'),
-  url('./assets/fonts/ProtoGroteskWeb-Regular.woff2') format('woff2'),
-  url('./assets/fonts/ProtoGroteskWeb-Regular.woff') format('woff'),
-  url('./assets/fonts/ProtoGroteskWeb-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: "Font Primary";
+	src: url("./assets/fonts/FontPrimary-Regular.eot");
+	src: url("./assets/fonts/FontPrimary-Regular.eot?#iefix")
+			format("embedded-opentype"),
+		url("./assets/fonts/FontPrimary-Regular.woff2") format("woff2"),
+		url("./assets/fonts/FontPrimary-Regular.woff") format("woff"),
+		url("./assets/fonts/FontPrimary-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Proto Grotesk Web Bold';
-  src: url('./assets/fonts/ProtoGroteskWeb-Bold.eot');
-  src: url('./assets/fonts/ProtoGroteskWeb-Bold.eot?#iefix') format('embedded-opentype'),
-  url('./assets/fonts/ProtoGroteskWeb-Bold.woff2') format('woff2'),
-  url('./assets/fonts/ProtoGroteskWeb-Bold.woff') format('woff'),
-  url('./assets/fonts/ProtoGroteskWeb-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
+	font-family: "Font Primary Bold";
+	src: url("./assets/fonts/FontPrimary-Bold.eot");
+	src: url("./assets/fonts/FontPrimary-Bold.eot?#iefix")
+			format("embedded-opentype"),
+		url("./assets/fonts/FontPrimary-Bold.woff2") format("woff2"),
+		url("./assets/fonts/FontPrimary-Bold.woff") format("woff"),
+		url("./assets/fonts/FontPrimary-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
 }
-
