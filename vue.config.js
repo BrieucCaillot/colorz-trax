@@ -7,5 +7,6 @@ module.exports = {
 			patterns: [path.resolve(__dirname, "./src/styles/app.scss")]
 		}
 	},
-	publicPath: process.env.NODE_ENV === "production" ? "/colorz-trax/" : "/"
+	publicPath: process.env.NODE_ENV === "production" ? "/colorz-trax/" : "/",
+	outputDir: "docs"
 }
